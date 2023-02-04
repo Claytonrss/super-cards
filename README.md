@@ -1,4 +1,4 @@
-[Next.js](https://nextjs.org/) boilerplate
+# SuperCards
 
 ## What is inside?
 
@@ -14,14 +14,7 @@ This project uses lot of stuff as:
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
 
-## Getting Started
-
-First, to create a project using this boilerplate, use this command:
-
-```bash
-npx create-next-app -e https://github.com/iamdevmarcos/my-boilerplate
-```
-
+## Steps
 Install all dependencies:
 
 ```bash
