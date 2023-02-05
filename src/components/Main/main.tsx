@@ -1,6 +1,6 @@
 import * as S from './main.styles'
 
-const Main = ({
+export const Main = ({
   title = 'Next.js Boilerplate',
   description = 'TypeScript, React.js, Next.js e Styled Components'
 }) => (
@@ -21,5 +21,3 @@ const Main = ({
     <S.LearnMore>Click on the Next and React logos to learn more</S.LearnMore>
   </S.Wrapper>
 )
-
-export default Main
