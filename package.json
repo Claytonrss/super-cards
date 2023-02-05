@@ -70,6 +70,6 @@
     "url": "https://github.com/Claytonrss"
   },
   "engines": {
-    "node": "16"
+    "node": "18"
   }
 }

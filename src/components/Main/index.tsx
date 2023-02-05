@@ -1,4 +1,4 @@
-import * as S from './main.styles'
+import * as S from './styles'
 
 export const Main = ({
   title = 'Next.js Boilerplate',
