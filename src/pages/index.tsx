@@ -1,5 +1,17 @@
-import { Main } from '../components/Main'
+import { CardsContainer } from 'components/CardsContainer'
+
+import { Card } from '../components/Card'
 
 export default function Home() {
-  return <Main />
+  return (
+    <main id="app">
+      <CardsContainer>
+        <Card
+          color1="rgba(0, 231, 255)"
+          color2="rgba(255, 0, 231)"
+          imgFront="img/card-front.jpg"
+        />
+      </CardsContainer>
+    </main>
+  )
 }
