@@ -9,6 +9,7 @@ export const Basic: Story = (args) => (
       color1="rgba(0, 231, 255)"
       color2="rgba(255, 0, 231)"
       imgFront="img/card-front.jpg"
+      hoverStyle="holo1"
       {...args}
     />
   </CardsContainer>
