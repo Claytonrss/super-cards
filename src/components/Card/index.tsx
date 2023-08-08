@@ -1,11 +1,16 @@
 import { useEffect, useRef } from 'react'
 
 import { useCardHover } from 'hooks/useCardHover'
+import { CardElementProps } from 'types/cards'
 
 import * as S from './styles'
-import { CardProps } from './types'
 
-export const Card = ({ color1, color2, imgFront, hoverStyle }: CardProps) => {
+export const Card = ({
+  color1,
+  color2,
+  imgFront,
+  hoverStyle
+}: CardElementProps) => {
   const cardRef = useRef<HTMLDivElement | null>(null)
 
   const { handleMove, handleOut } = useCardHover()
@@ -36,7 +41,7 @@ export const Card = ({ color1, color2, imgFront, hoverStyle }: CardProps) => {
       color2={color2}
       imgFront={imgFront}
       hoverStyle={hoverStyle}
-      className={`card ${hoverStyle}`}
+      className={`card ${hoverStyle} animated`}
       ref={cardRef}
     />
   )

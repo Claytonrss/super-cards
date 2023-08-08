@@ -20,8 +20,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .card{
-    width: 500px;
-    height: 700px;
+    width: 400px;
+    height: 560px;
     position: relative;
     overflow: hidden;
     margin: 20px;
@@ -59,6 +59,8 @@ const GlobalStyles = createGlobalStyle`
 
   #app {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
   }
 
 

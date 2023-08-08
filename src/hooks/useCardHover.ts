@@ -11,8 +11,12 @@ export const useCardHover = () => {
       clientX = event.touches[0].clientX
       clientY = event.touches[0].clientY
     } else if (event instanceof MouseEvent) {
-      clientX = event.clientX
-      clientY = event.clientY
+      const eventMouse = event as MouseEvent
+      const element = eventMouse.target as HTMLDivElement
+      const rect = element.getBoundingClientRect()
+      // calculate position relative to the top-left corner of the element
+      clientX = event.clientX - rect.left
+      clientY = event.clientY - rect.top
     }
 
     const card = event.currentTarget as HTMLElement

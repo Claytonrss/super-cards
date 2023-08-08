@@ -1,10 +1,11 @@
 import styled from 'styled-components'
+import { CardElementProps } from 'types/cards'
 
 import { holo1Style } from './effects/holo1'
 import { holo2Style } from './effects/holo2'
-import { CardProps } from './types'
+import { holo3Style } from './effects/holo3'
 
-export const CardStyle = styled.div<CardProps>`
+export const CardStyle = styled.div<CardElementProps>`
   --color1: ${(props) => props.color1};
   --color2: ${(props) => props.color2};
   --imgFront: ${(props) => `url('${props.imgFront}')`};
@@ -35,6 +36,9 @@ export const Wrapper = styled(CardStyle)`
     }
     if (hoverStyle === 'holo2') {
       return holo2Style
+    }
+    if (hoverStyle === 'holo3') {
+      return holo3Style
     }
   }}
 `

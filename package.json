@@ -15,8 +15,8 @@
     "test:e2e": "start-server-and-test dev 3000 cy:open",
     "postinstall": "husky install",
     "prepare": "husky install",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "next": "^13.1.6",
@@ -28,10 +28,10 @@
     "@babel/core": "^7.19.1",
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
-    "@storybook/addon-essentials": "6.5.16",
-    "@storybook/builder-webpack5": "6.5.16",
-    "@storybook/manager-webpack5": "6.5.16",
-    "@storybook/react": "6.4.17",
+    "@mdx-js/react": "^1.6.22",
+    "@storybook/addon-essentials": "7.2.2-alpha.0",
+    "@storybook/nextjs": "7.2.2-alpha.0",
+    "@storybook/react": "7.2.2-alpha.0",
     "@testing-library/cypress": "^8.0.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
@@ -53,15 +53,22 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
+    "eslint-plugin-storybook": "^0.6.13",
     "husky": "^7.0.4",
     "jest": "^26.1.0",
     "jest-styled-components": "^7.1.0",
     "plop": "^3.1.1",
     "prettier": "2.6.2",
     "start-server-and-test": "^1.15.2",
-    "storybook-addon-next-router": "^4.0.2",
+    "storybook": "7.2.2-alpha.0",
     "typescript": "^4.9.3",
     "webpack": "5.68.0"
+  },
+  "overrides": {
+    "@mdx-js/react": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
   },
   "license": "MIT",
   "author": {
